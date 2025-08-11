@@ -1,0 +1,19 @@
+# MANIFEST.in
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include realtime_notifications *.css
+recursive-include realtime_notifications *.csv
+recursive-include realtime_notifications *.html
+recursive-include realtime_notifications *.ico
+recursive-include realtime_notifications *.js
+recursive-include realtime_notifications *.json
+recursive-include realtime_notifications *.md
+recursive-include realtime_notifications *.png
+recursive-include realtime_notifications *.py
+recursive-include realtime_notifications *.svg
+recursive-include realtime_notifications *.txt
+recursive-exclude realtime_notifications *.pyc

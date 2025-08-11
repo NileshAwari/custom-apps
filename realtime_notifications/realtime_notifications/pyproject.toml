@@ -1,0 +1,15 @@
+# pyproject.toml
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "realtime_notifications"
+authors = [
+    {name = "Nilesh", email = "nileshawari2000@gmail.com"},
+]
+dynamic = ["version", "description"]
+readme = "README.md"
+dependencies = [
+    "frappe",
+]

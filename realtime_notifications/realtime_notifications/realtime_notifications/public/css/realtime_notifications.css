@@ -1,0 +1,78 @@
+/* realtime_notifications/public/css/realtime_notifications.css */
+
+/* Notification popup styles */
+.realtime-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: 1px solid #d1d8dd;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 9999;
+    max-width: 400px;
+    animation: slideInRight 0.3s ease;
+}
+
+.realtime-notification.success {
+    border-left: 4px solid #28a745;
+}
+
+.realtime-notification.error {
+    border-left: 4px solid #dc3545;
+}
+
+.realtime-notification.warning {
+    border-left: 4px solid #ffc107;
+}
+
+.realtime-notification.info {
+    border-left: 4px solid #007bff;
+}
+
+.notification-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.notification-message {
+    color: #666;
+    font-size: 14px;
+}
+
+.notification-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: #999;
+    font-size: 16px;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Notification button styles */
+.notification-test-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.notification-test-btn:hover {
+    background: #0056b3;
+}
